@@ -37,5 +37,10 @@ public class Player : MonoBehaviour
             rig.velocity = mov * speed;
             ren.flipX = false;
         }
+        if (transform.position.y <= -69)
+        {
+            Vector3 mov = new Vector3(0f, 0f, 0f);
+            rig.velocity = mov * speedcon;
+        }
     }
 }
